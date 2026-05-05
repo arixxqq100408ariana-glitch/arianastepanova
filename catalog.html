@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Выпечка с любовью - Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header>
+            <a href="index.html" class="logo-link" style="text-decoration: none;">
+                <div class="logo">
+                    <h1>Выпечка с любовью</h1>
+                    <p>ИНТЕРНЕТ-МАГАЗИН</p>
+                </div>
+            </a>
+            <div class="header-right">
+               <a href="cart.html" class="cart-icon-header">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</a>
+                <div class="burger-menu">☰</div>
+            </div>
+        </header>
+
+        <nav class="mobile-nav">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="catalog.html">КАТАЛОГ</a>
+            <a href="about.html">О НАС</a>
+            <a href="account.html">ВХОД / РЕГИСТРАЦИЯ</a>
+        </nav>
+
+        <main>
+            <h2 class="page-title">Каталог товаров</h2>
+            
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="cake">Торты</button>
+                <button class="filter-btn" data-filter="dessert">Десерты</button>
+                <button class="filter-btn" data-filter="pastry">Пирожные</button>
+                <button class="filter-btn" data-filter="cookies">Печенье</button>
+            </div>
+            
+            <div class="product-grid" id="catalog-products"></div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
