@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Выпечка с любовью - Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header>
+            <a href="index.html" class="logo-link" style="text-decoration: none;">
+                <div class="logo">
+                    <h1>Выпечка с любовью</h1>
+                    <p>ИНТЕРНЕТ-МАГАЗИН</p>
+                </div>
+            </a>
+            <div class="header-right">
+               <a href="cart.html" class="cart-icon-header">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</a>
+                <div class="burger-menu">☰</div>
+            </div>
+        </header>
+
+        <nav class="mobile-nav">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="catalog.html">КАТАЛОГ</a>
+            <a href="about.html">О НАС</a>
+            <a href="account.html">ВХОД / РЕГИСТРАЦИЯ</a>
+        </nav>
+
+        <main class="account-page">
+            <h2 class="page-title">Личный кабинет</h2>
+            
+            <div class="account-container">
+                <div id="user-info" style="display: none;">
+                    <div class="welcome-message">
+                        <p>Добро пожаловать, <span id="username"></span>!</p>
+                        <p class="user-email" id="user-email"></p>
+                    </div>
+                    
+                    <div class="orders-history">
+                        <h3>Мои заказы</h3>
+                        <div id="orders-list" class="orders-list"></div>
+                    </div>
+                    
+                    <button class="logout-btn" id="logout">Выйти</button>
+                </div>
+
+                <div id="auth-forms" class="auth-forms">
+                    <form id="login-form" class="auth-form">
+                        <h3>Вход</h3>
+                        <div class="form-group"><input type="text" placeholder="Логин" required></div>
+                        <div class="form-group"><input type="password" placeholder="Пароль" required></div>
+                        <button type="submit" class="auth-btn">Войти</button>
+                    </form>
+
+                    <form id="register-form" class="auth-form">
+                        <h3>Регистрация</h3>
+                        <div class="form-group"><input type="text" placeholder="Ваше имя" required></div>
+                        <div class="form-group"><input type="email" placeholder="Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Логин" required></div>
+                        <div class="form-group"><input type="password" placeholder="Пароль" required></div>
+                        <div class="form-group"><input type="password" placeholder="Подтвердите пароль" required></div>
+                        <button type="submit" class="auth-btn">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
